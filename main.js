@@ -95,6 +95,7 @@ function drawLoop( time ) {
     {
         canvasContext.fillStyle = "red";
         jump();
+        e.preventDefault();
     }
     else
         canvasContext.fillStyle = "green";
