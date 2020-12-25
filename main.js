@@ -92,8 +92,10 @@ function drawLoop( time ) {
 
     // check if we're currently clipping
     if (meter.checkClipping())
+    {
         canvasContext.fillStyle = "red";
-        startJump();
+        //startJump();
+    }
     else
         canvasContext.fillStyle = "green";
 
