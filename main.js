@@ -30,7 +30,7 @@ var rafID = null;
 
 
 function myFunction() {
-
+    console.log(checkClipping());
     // grab our canvas
 	canvasContext = document.getElementById( "meter" ).getContext("2d");
 	
@@ -94,7 +94,7 @@ function drawLoop( time ) {
     if (meter.checkClipping())
     {
         canvasContext.fillStyle = "red";
-        //startJump();
+        startJump();
     }
     else
         canvasContext.fillStyle = "green";
