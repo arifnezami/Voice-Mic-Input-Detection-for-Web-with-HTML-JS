@@ -11,7 +11,7 @@
 	</head>
 	<body>
         <button onclick="myFunction()">Click to Start</button>
-        <button onclick="startJump()">Click to Start</button>
+        <button onclick="this.tRex.startJump()">Click to Start</button>
 		<br>
 		<p>This sample shows how to implement a clip-indicating volume meter in Web Audio, using a ScriptProcessor.  It's necessary to use a ScriptProcessor in order to not miss any clipping samples - otherwise you could implement this using a RealtimeAnalyser to only grab samples when necessary.</p>
 		<canvas id="meter" width="500" height="50"></canvas>
