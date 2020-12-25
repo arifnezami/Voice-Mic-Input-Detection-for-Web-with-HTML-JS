@@ -16,6 +16,13 @@
 		<canvas id="meter" width="500" height="50"></canvas>
         #####
         <script type="text/javascript">
+
+            //var result  = '';
+            for(var i = 1; i < 11000; i += 1) {
+                console.log(meter.checkClipping());
+            }
+            
+
             function hideClass(name) {
                var myClasses = document.querySelectorAll(name),
               i = 0,
