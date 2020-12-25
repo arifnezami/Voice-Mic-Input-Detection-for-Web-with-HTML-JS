@@ -8,48 +8,8 @@
 		<script src="volume-meter.js"></script>
 		<!-- Include the main app logic -->
 		<script src="main.js"></script>
-	</head>
-	<body>
-		<button onclick="myFunction()">Click me</button>
-		<p>This sample shows how to implement a clip-indicating volume meter in Web Audio, using a ScriptProcessor.  It's necessary to use a ScriptProcessor in order to not miss any clipping samples - otherwise you could implement this using a RealtimeAnalyser to only grab samples when necessary.</p>
-		<canvas id="meter" width="500" height="50"></canvas>
 
-		<p>Check out the <a href="http://github.com/cwilso/volume-meter/">source on Github</a>.</p>
-		<p>The usage is quite easy:
-		<pre>var meter = createAudioMeter(audioContext,clipLevel,averaging,clipLag);
-
-audioContext: the AudioContext you're using.
-clipLevel: the level (0 to 1) that you would consider "clipping".  Defaults to 0.98.
-averaging: how "smoothed" you would like the meter to be over time.  Should be between 0 and less than 1.  Defaults to 0.95.
-clipLag: how long you would like the "clipping" indicator to show after clipping has occured, in milliseconds.  Defaults to 750ms.
-
-meter.checkClipping();
-
-returns true if the node has clipped in the last clipLag milliseconds.
-
-meter.shutdown();
-
-used to destroy the node (it's important to disconnect and remove the event handler for any ScriptProcessor).
-
-<html>
-
-	<head>
-	<title>T-Rex Game</title>
-	<meta name="description" content="Ripped T-Rex/Dino game of Chromium">
-	<meta property="og:title" content="Play the hidden T-Rex Dinosaur game of Chromium .">
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="http://www.thecodepost.org">
-	<meta property="og:image" content="http://img.thecodepost.org/2015/01/trex.png">
-	<meta property="og:site_name" content="The Code Post">
-	<meta property="og:description" content="Google Chrome has a hidden T-Rex game only for offline mode. But now, you can enjoy it any time and on any device, but you gotta stay online!!!">
-	
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@thecodepost">
-	<meta name="twitter:creator" content="@thecodepost">
-	<meta name="twitter:title" content="Check out the cool hidden game from Google Chrome!">
-	<meta name="twitter:description" content="Check out the cool hidden game from Google Chrome!">
-	<meta name="twitter:image:src" content="http://img.thecodepost.org/2015/01/trex.png">
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 	
 		<!--script type="text/javascript" src="a.js"></script-->
 		<script type="text/javascript">
@@ -2571,8 +2531,30 @@ used to destroy the node (it's important to disconnect and remove the event hand
 	}
 	</style>
 	</head>
+	<body>
+		<button onclick="myFunction()">Click me</button>
+		<p>This sample shows how to implement a clip-indicating volume meter in Web Audio, using a ScriptProcessor.  It's necessary to use a ScriptProcessor in order to not miss any clipping samples - otherwise you could implement this using a RealtimeAnalyser to only grab samples when necessary.</p>
+		<canvas id="meter" width="500" height="50"></canvas>
+
+		<p>Check out the <a href="http://github.com/cwilso/volume-meter/">source on Github</a>.</p>
+		<p>The usage is quite easy:
+		<pre>var meter = createAudioMeter(audioContext,clipLevel,averaging,clipLag);
+
+audioContext: the AudioContext you're using.
+clipLevel: the level (0 to 1) that you would consider "clipping".  Defaults to 0.98.
+averaging: how "smoothed" you would like the meter to be over time.  Should be between 0 and less than 1.  Defaults to 0.95.
+clipLag: how long you would like the "clipping" indicator to show after clipping has occured, in milliseconds.  Defaults to 750ms.
+
+meter.checkClipping();
+
+returns true if the node has clipped in the last clipLag milliseconds.
+
+meter.shutdown();
+
+used to destroy the node (it's important to disconnect and remove the event handler for any ScriptProcessor).
+
+
 	
-	<body id="t">
 	
 	<div id="main-frame-error" class="interstitial-wrapper" jstcache="0">
 		<div class="onlyforchrome" style="font-size: 30px;text-align: center;font-family: Helvetica;">Running T-Rex</div>
@@ -2627,10 +2609,7 @@ used to destroy the node (it's important to disconnect and remove the event hand
 	
 	
 	
-	</body>
 	
-	</html>
-
 
 
 
