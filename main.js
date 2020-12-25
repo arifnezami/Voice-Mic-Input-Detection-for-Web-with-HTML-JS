@@ -28,7 +28,7 @@ var WIDTH=500;
 var HEIGHT=50;
 var rafID = null;
 
-window.onload = function() {
+myFunction() {
 
     // grab our canvas
 	canvasContext = document.getElementById( "meter" ).getContext("2d");
