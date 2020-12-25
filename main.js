@@ -94,7 +94,7 @@ function drawLoop( time ) {
     if (meter.checkClipping())
     {
         canvasContext.fillStyle = "red";
-        startJump();
+        jump();
     }
     else
         canvasContext.fillStyle = "green";
