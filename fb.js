@@ -113,7 +113,8 @@ var deathAnimation = function(){
 		splash = undefined;
 	}
 	else {
-        ctx.drawImage(scoreBoard, width / 2 - 118, height / 2 - 54);
+		ctx.drawImage(scoreBoard, width / 2 - 118, height / 2 - 54);
+		myFunction();
         playend = true;
         playdata = [mode, score];
         if(window.window.WeixinApi && window.WeixinJSBridge) {
