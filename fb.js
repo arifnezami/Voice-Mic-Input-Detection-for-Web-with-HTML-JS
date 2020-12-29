@@ -111,6 +111,7 @@ var deathAnimation = function(){
 	if(splash){
 		ctx.drawImage(splash, width / 2 - 94, height / 2 - 54);
 		splash = undefined;
+		myFunction();
 	}
 	else {
 		ctx.drawImage(scoreBoard, width / 2 - 118, height / 2 - 54);
