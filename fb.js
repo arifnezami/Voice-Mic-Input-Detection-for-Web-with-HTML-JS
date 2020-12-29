@@ -258,13 +258,7 @@ var anim = function(){
 }
 
 var jump = function(){
-	console.log(splash);
-	if(splash)
-	{
-
-	}
-	else
-	{
+	
 	if(death){
 		dist = 0;
 		birdY = (height - 112) / 2;
@@ -290,7 +284,6 @@ var jump = function(){
 		birdV = 6;
 	else
 		birdV = 6;
-	}
 }
 
 var easy, normal, hard;
