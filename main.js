@@ -91,6 +91,7 @@ function drawLoop( time ) {
     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
 
     // check if we're currently clipping
+    console.log(meter.checkClipping());
     if (meter.checkClipping())
     {
         canvasContext.fillStyle = "red";
