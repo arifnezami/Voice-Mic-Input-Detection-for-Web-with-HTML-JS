@@ -258,6 +258,7 @@ var anim = function(){
 }
 
 var jump = function(){
+	console.log(splash);
 	if(splash)
 	{
 

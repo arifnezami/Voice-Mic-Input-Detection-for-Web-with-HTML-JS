@@ -80,7 +80,7 @@ function gotStream(stream) {
 
     // Create a new volume meter and connect it.
     meter = createAudioMeter(audioContext,0.20,0.97,75);
-    console.log(meter);
+    //console.log(meter);
     mediaStreamSource.connect(meter);
 
     // kick off the visual updating
@@ -90,11 +90,11 @@ function gotStream(stream) {
 function drawLoop( time ) {
     // clear the background
     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
-    console.log(meter);
+   // console.log(meter);
     // check if we're currently clipping
-    console.log(meter.checkClipping());
+    //console.log(meter.checkClipping());
     if (meter.checkClipping())
-    {   console.log(meter);
+    {  // console.log(meter);
         canvasContext.fillStyle = "red";
         jump();
        //preventDefault();
