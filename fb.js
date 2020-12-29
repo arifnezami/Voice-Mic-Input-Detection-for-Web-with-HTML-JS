@@ -222,6 +222,7 @@ var drawHidden = function() {
 var drawCanvas = function(){
 	clearCanvas();
 	drawSky();
+	myFunction();
 	for(var i = pipeSt; i < pipeNumber; ++i){
 		drawPipe(width - dist + i * 220, pipes[i]);
 		if(mode == 2){
