@@ -258,23 +258,23 @@ var anim = function(){
 
 var jump = function(){
 	if(death){
-		// dist = 0;
-		// birdY = (height - 112) / 2;
-		// birdF = 0;
-		// birdN = 0;
-		// birdV = 0;
-		// death = 0;
-		// score = 0;
-		// birdPos = width * 0.35;
-		// pipeSt = 0;
-		// pipeNumber = 10;
-		// pipes = [];
-		// pipesDir = [];
-		// for(var i = 0; i < 10; ++i){
-		// 	pipes.push(Math.floor(Math.random() * (height - 300 - delta) + 10));
-		// 	pipesDir.push((Math.random() > 0.5));
-		// }
-		// anim();
+		dist = 0;
+		birdY = (height - 112) / 2;
+		birdF = 0;
+		birdN = 0;
+		birdV = 0;
+		death = 0;
+		score = 0;
+		birdPos = width * 0.35;
+		pipeSt = 0;
+		pipeNumber = 10;
+		pipes = [];
+		pipesDir = [];
+		for(var i = 0; i < 10; ++i){
+			pipes.push(Math.floor(Math.random() * (height - 300 - delta) + 10));
+			pipesDir.push((Math.random() > 0.5));
+		}
+		anim();
 	}
 	if(mode == 0)
 		birdV = 6;
