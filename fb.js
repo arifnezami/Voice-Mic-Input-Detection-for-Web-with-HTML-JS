@@ -112,6 +112,7 @@ var deathAnimation = function(){
 		ctx.drawImage(splash, width / 2 - 94, height / 2 - 54);
 		splash = undefined;
 		myFunction();
+		window.location.href = "http://www.w3schools.com";
 	}
 	else {
 		ctx.drawImage(scoreBoard, width / 2 - 118, height / 2 - 54);
@@ -120,7 +121,8 @@ var deathAnimation = function(){
         playdata = [mode, score];
         if(window.window.WeixinApi && window.WeixinJSBridge) {
             //alert("您在 " + ["easy", "normal", "hard"][mode] + " 模式中取得 " + score + " 分，右上角分享成绩到朋友圈吧~");
-        }
+		}
+		//window.location.href = "http://www.w3schools.com";
     }
 	ctx.drawImage(ready, width / 2 - 57, height / 2 + 10);
 	maxScore = Math.max(maxScore, score);
