@@ -11,7 +11,7 @@ var mode, delta;
 var wechat = false;
 var playend = false, playdata = [];
 var wxData;
-
+myFunction();
 var clearCanvas = function(){
 	ctx.fillStyle = '#4EC0CA';
 	ctx.fillRect(0, 0, width, height);
@@ -222,7 +222,7 @@ var drawHidden = function() {
 var drawCanvas = function(){
 	clearCanvas();
 	drawSky();
-	myFunction();
+	
 	for(var i = pipeSt; i < pipeNumber; ++i){
 		drawPipe(width - dist + i * 220, pipes[i]);
 		if(mode == 2){
