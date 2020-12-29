@@ -97,7 +97,7 @@ function drawLoop( time ) {
     {   console.log(meter);
         canvasContext.fillStyle = "red";
         jump();
-       // e.preventDefault();
+       preventDefault();
     }
     else
         canvasContext.fillStyle = "green";
