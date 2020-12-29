@@ -111,11 +111,11 @@ var deathAnimation = function(){
 	if(splash){
 		ctx.drawImage(splash, width / 2 - 94, height / 2 - 54);
 		splash = undefined;
-		myFunction();
+		
 	}
 	else {
 		ctx.drawImage(scoreBoard, width / 2 - 118, height / 2 - 54);
-		myFunction();
+		
         playend = true;
         playdata = [mode, score];
         if(window.window.WeixinApi && window.WeixinJSBridge) {
@@ -258,6 +258,12 @@ var anim = function(){
 }
 
 var jump = function(){
+	if(splash)
+	{
+
+	}
+	else
+	{
 	if(death){
 		dist = 0;
 		birdY = (height - 112) / 2;
@@ -283,6 +289,7 @@ var jump = function(){
 		birdV = 6;
 	else
 		birdV = 6;
+	}
 }
 
 var easy, normal, hard;
