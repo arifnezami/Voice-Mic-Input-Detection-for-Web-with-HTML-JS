@@ -122,7 +122,7 @@ var deathAnimation = function(){
         if(window.window.WeixinApi && window.WeixinJSBridge) {
             //alert("您在 " + ["easy", "normal", "hard"][mode] + " 模式中取得 " + score + " 分，右上角分享成绩到朋友圈吧~");
 		}
-		window.location.href = "#";
+		window.location.href = "https://game.xho.to/emoji/voicegame.php";
     }
 	ctx.drawImage(ready, width / 2 - 57, height / 2 + 10);
 	maxScore = Math.max(maxScore, score);
