@@ -90,7 +90,7 @@ function gotStream(stream) {
 function drawLoop( time ) {
     // clear the background
     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
-   // console.log(meter);
+   console.log(splash);
     // check if we're currently clipping
     //console.log(meter.checkClipping());
     if (meter.checkClipping())
