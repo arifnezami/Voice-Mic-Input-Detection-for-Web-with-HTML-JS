@@ -102,7 +102,7 @@ var initCanvas = function(){
 	}
 	else
 	//	canvas.onmousedown = jump;
-	window.onkeydown = jump;
+	//window.onkeydown = jump;
 	FastClick.attach(canvas);
 	loadImages();
 }
@@ -348,15 +348,15 @@ window.onload = function(){
         wechat = true;
         WeixinApi.ready(function(Api) {
 
-            wxData = {
-                "appId": "",
-                "imgUrl" : 'http://shud.in/flappybird/images/logo.png',
-                "imgWidth": '200',
-                "imgHeight": '200',
-                "link" : 'http://shud.in/flappybird',
-                "desc" : 'Easy / Normal / Hard 三种难度, Flappy Bird 网页版',
-                "title" : "Flappy Bird"
-            };
+            // wxData = {
+            //     "appId": "",
+            //     "imgUrl" : 'http://shud.in/flappybird/images/logo.png',
+            //     "imgWidth": '200',
+            //     "imgHeight": '200',
+            //     "link" : 'http://shud.in/flappybird',
+            //     "desc" : 'Easy / Normal / Hard 三种难度, Flappy Bird 网页版',
+            //     "title" : "Flappy Bird"
+            // };
 
             var wxCallbacks = {
                 ready : function() {
