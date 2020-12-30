@@ -29,6 +29,20 @@ var HEIGHT=50;
 var rafID = null;
 var audiostart = "no";
 
+checkLoop();
+
+
+function checkLoop( time ) {
+   
+   //console.log(splash);
+   if(audiostart == "no")
+   {
+    console.log("Audio Started.");
+       myFunction();
+   }
+}
+
+
 function myFunction() {
     
     // grab our canvas
@@ -97,7 +111,7 @@ function drawLoop( time ) {
     console.log("Audio Started.");
        myFunction();
    }
-   console.log(audiostart);
+   //console.log(audiostart);
     // check if we're currently clipping
     //console.log(meter.checkClipping());
     if (meter.checkClipping())
