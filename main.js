@@ -79,7 +79,7 @@ function myFunction() {
         alert('getUserMedia threw exception :' + e);
     }
     audiostart = 'yes';
-   document.getElementById("p1").innerHTML = "Now scream to play the game!";
+   
 
 }
 
@@ -97,6 +97,7 @@ function gotStream(stream) {
     // Create a new volume meter and connect it.
     meter = createAudioMeter(audioContext,0.20,0.97,75);
     //console.log(meter);
+    document.getElementById("p1").innerHTML = "Now scream to play the game!";
     mediaStreamSource.connect(meter);
 
     // kick off the visual updating
