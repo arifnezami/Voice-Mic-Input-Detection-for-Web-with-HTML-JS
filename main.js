@@ -90,13 +90,15 @@ function gotStream(stream) {
 function drawLoop( time ) {
     // clear the background
     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
-   console.log(splash);
+   //console.log(splash);
+   console.log(meter);
     // check if we're currently clipping
     //console.log(meter.checkClipping());
     if (meter.checkClipping())
-    {  console.log(meter);
+    {  
         canvasContext.fillStyle = "red";
         jump();
+        
        //preventDefault();
     }
     else
