@@ -79,7 +79,7 @@ function myFunction() {
         alert('getUserMedia threw exception :' + e);
     }
     audiostart = 'yes';
-    document.getElementById("p1").innerHTML = "Now scream to play the game!";
+  // document.getElementById("p1").innerHTML = "Now scream to play the game!";
 
 }
 
