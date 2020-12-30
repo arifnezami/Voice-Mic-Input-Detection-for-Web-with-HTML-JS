@@ -92,7 +92,7 @@ function drawLoop( time ) {
     // clear the background
     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
    //console.log(splash);
-   if(audiostart != "yes")
+   if(audiostart == "no")
    {
     console.log("Audio Started.");
        myFunction();
