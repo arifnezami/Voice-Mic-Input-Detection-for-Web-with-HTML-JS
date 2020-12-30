@@ -96,7 +96,7 @@ function drawLoop( time ) {
    {
        myFunction();
    }
-   console.log(meter);
+   console.log(audiostart);
     // check if we're currently clipping
     //console.log(meter.checkClipping());
     if (meter.checkClipping())
