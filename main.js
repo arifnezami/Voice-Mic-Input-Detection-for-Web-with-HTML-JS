@@ -27,7 +27,7 @@ var canvasContext = null;
 var WIDTH=500;
 var HEIGHT=50;
 var rafID = null;
-var audiostart = null;
+var audiostart = "no";
 
 function myFunction() {
     
@@ -92,8 +92,9 @@ function drawLoop( time ) {
     // clear the background
     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
    //console.log(splash);
-   if(audiostart != 'yes')
+   if(audiostart != "yes")
    {
+    console.log("Audio Started.");
        myFunction();
    }
    console.log(audiostart);
