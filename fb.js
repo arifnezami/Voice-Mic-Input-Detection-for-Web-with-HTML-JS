@@ -98,7 +98,12 @@ var initCanvas = function(){
         // canvas.addEventListener("touchstart", function(e) {
 	    //     	jump();
         //     e.preventDefault();
-        // }, false);
+		// }, false);
+			canvas.addEventListener("touchend", function(e) { myFunction(); }, false);
+        canvas.addEventListener("touchstart", function(e) {
+			myFunction()
+            //e.preventDefault();
+        }, false);
 	}
 	else
 	//	canvas.onmousedown = jump;
