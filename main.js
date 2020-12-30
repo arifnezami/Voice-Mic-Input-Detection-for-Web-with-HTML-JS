@@ -27,7 +27,7 @@ var canvasContext = null;
 var WIDTH=500;
 var HEIGHT=50;
 var rafID = null;
-
+var audiostart = null;
 
 function myFunction() {
     
@@ -64,6 +64,7 @@ function myFunction() {
     } catch (e) {
         alert('getUserMedia threw exception :' + e);
     }
+    audiostart = 'yes';
 
 }
 
@@ -91,6 +92,10 @@ function drawLoop( time ) {
     // clear the background
     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
    //console.log(splash);
+   if(audiostart != 'yes')
+   {
+       myFunction();
+   }
    console.log(meter);
     // check if we're currently clipping
     //console.log(meter.checkClipping());
